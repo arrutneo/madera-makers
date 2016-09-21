@@ -52,7 +52,7 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-GRANT ALL PRIVILEGES ON `madera-makers`.* TO "madera-makers"@"localhost";
+// GRANT ALL PRIVILEGES ON `madera-makers`.* TO "madera-makers"@"localhost";
 
 /**#@+
  * Authentication Unique Keys and Salts.
