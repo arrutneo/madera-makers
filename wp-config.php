@@ -18,8 +18,6 @@
  * @package WordPress
  */
 
-
-
  // ** MySQL settings - You can get this info from your web host ** //
  if(isset($_SERVER['WP_DB_PASSWORD'])){
    /** The name of the database for WordPress */
