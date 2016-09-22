@@ -275,7 +275,6 @@ gulp.task('build', function(callback) {
   runSequence('styles',
               'scripts',
               ['fonts', 'images'],
-              's3',
               callback);
 });
 
