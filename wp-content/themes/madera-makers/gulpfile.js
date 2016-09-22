@@ -19,6 +19,8 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var s3           = require("gulp-s3");
+var fs           = require("fs");
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -159,6 +161,14 @@ var writeToManifest = function(directory) {
     .pipe(gulp.dest, path.dist)();
 };
 
+
+
+gulp.task('s3', function () {
+  var aws = JSON.parse(fs.readFileSync('./aws.json'));
+  return gulp.src('./dist/**')
+      .pipe(s3(aws));
+});
+
 // ## Gulp tasks
 // Run `gulp -T` for a task summary
 
@@ -265,6 +275,7 @@ gulp.task('build', function(callback) {
   runSequence('styles',
               'scripts',
               ['fonts', 'images'],
+              's3',
               callback);
 });
 
