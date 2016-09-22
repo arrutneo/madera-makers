@@ -164,9 +164,10 @@ var writeToManifest = function(directory) {
 
 
 gulp.task('s3', function () {
+  var options = {uploadPath: "/wp-content/themes/madera-makers/dist/"};
   var aws = JSON.parse(fs.readFileSync('./aws.json'));
   return gulp.src('./dist/**')
-      .pipe(s3(aws));
+      .pipe(s3(aws, options));
 });
 
 // ## Gulp tasks
@@ -275,6 +276,7 @@ gulp.task('build', function(callback) {
   runSequence('styles',
               'scripts',
               ['fonts', 'images'],
+              's3',
               callback);
 });
 
