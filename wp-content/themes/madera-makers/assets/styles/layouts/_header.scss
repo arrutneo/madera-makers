@@ -1,0 +1,42 @@
+.navbar {
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  width: 90px;
+  height: 72px;
+  overflow: hidden;
+  padding: 0;
+  &:before {
+    content: "";
+    width: 90px;
+    height: 72px;
+    background: url(../images/maderamakers-logo.svg) no-repeat 100%;
+    display: inline-block;
+  }
+}
+
+.navbar-right {
+  li {
+    a {
+      padding-right: 0;
+    }
+  }
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .navbar {
+    & > .container {
+      .navbar-brand {
+        margin-left: 0;
+      }
+    }
+  }
+}
