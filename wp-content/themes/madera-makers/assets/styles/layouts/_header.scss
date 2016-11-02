@@ -1,20 +1,26 @@
 .navbar {
   box-shadow: none;
   margin-bottom: 0;
-  padding: 15px 0;
+  padding: 18px 0;
+
+  color: white;
+  z-index: 1;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
 }
 
 .navbar-brand {
-  width: 90px;
-  height: 72px;
   overflow: hidden;
   padding: 0;
+  width: 100px;
+  height: 85px;
   &:before {
     content: "";
-    width: 90px;
-    height: 72px;
-    background: url(../images/maderamakers-logo.svg) no-repeat 100%;
-    display: inline-block;
+    width: 100px;
+    height: 85px;
+    background: url(../images/maderamakers-logo-white.svg) no-repeat 100%;
+    display: block;
   }
 }
 

@@ -2,11 +2,36 @@ body {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+strong {
+  font-family: $font-family-sans-serif-bold;
+}
+
+em {
+  font-family: $font-family-sans-serif-italic;
+}
 .jumbotron {
   background-color: transparent;
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 
   h1 {
-    margin-bottom: 50px;
+    margin: 50px auto 5px;
+    color: white;
+
+    padding-top: 65px;
+    background-image: url(../images/maderamakers-imago.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    & + p {
+      margin-bottom: 60px;
+    }
+  }
+  p.text-left {
+    margin-top: 120px;
+    margin-bottom: 0;
   }
   .thumbnail {
     padding: 25px;
@@ -16,5 +41,16 @@ body {
     strong {
       display: block;
     }
+  }
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .jumbotron {
+    padding-top: 121px;
+    // height: 100vh;
   }
 }

@@ -26,7 +26,7 @@ $gray:                   #666 !default;
 $gray-light:             #bbb !default;
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #2196F3 !default;
+$brand-primary:         #C5AF7A;
 $brand-success:         #4CAF50 !default;
 $brand-info:            #9C27B0 !default;
 $brand-warning:         #ff9800 !default;
@@ -54,14 +54,17 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif: "Lato-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif-italic: "Lato-Italic", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif-bold: "Lato-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif-headings:  "Oswald-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          13px !default;
-$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-base:          16px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~20px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
 $font-size-h1:            56px !default;
@@ -77,10 +80,10 @@ $line-height-base:        1.846 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
+$headings-font-family:    $font-family-sans-serif-headings !default;
 $headings-font-weight:    400 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          #444 !default;
+$headings-color:          $brand-primary !default;
 
 
 //== Iconography
@@ -381,8 +384,8 @@ $navbar-default-bg:                #fff !default;
 $navbar-default-border:            transparent !default;
 
 // Navbar links
-$navbar-default-link-color:                $gray !default;
-$navbar-default-link-hover-color:          $gray-dark !default;
+$navbar-default-link-color:                white;
+$navbar-default-link-hover-color:          $gray-light;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         $gray-dark !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
@@ -500,8 +503,8 @@ $jumbotron-padding:              30px !default;
 $jumbotron-color:                inherit !default;
 $jumbotron-bg:                   #f5f5f5 !default;
 $jumbotron-heading-color:        $headings-color !default;
-$jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
-$jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
+$jumbotron-font-size:            ceil(($font-size-base * 1.125)) !default;
+$jumbotron-heading-font-size:    ceil(($font-size-base * 4.125)) !default;
 
 
 //== Form states and alerts

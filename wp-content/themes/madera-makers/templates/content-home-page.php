@@ -1,42 +1,13 @@
-<?php the_content(); ?>
 <div class="jumbotron">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 text-center upside-down">
-        <h1 class="">Fabricamos el mueble que quieres</h1>
-        <!-- <p class="font-size-large">Learn User Experience Design from Wizeline’s world-class User Experience Team</p> -->
-        <ul class="list-inline row">
-          <li class="col-sm-4">
-            <div class="thumbnail">
-              <p class="">
-                <i class="fa fa-bed" aria-hidden="true"></i>
-                <strong>Paso 1</strong>
-              </p>
-            </div>
-            <h4>Sube la imagen del mueble de tus sueños</h4>
-          </li>
-          <li class="col-sm-4">
-            <div class="thumbnail">
-              <p>
-                <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                <strong>Paso 2</strong>
-              </p>
-            </div>
-            <h4>Recibe tu cotización</h4>
-          </li>
-          <li class="col-sm-4">
-            <div class="thumbnail">
-              <p>
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <strong>Paso 3</strong>
-              </p>
-            </div>
-            <h4>Ordena tu mueble!</h4>
-          </li>
-        </ul>
+        <h1 class="text-uppercase">Fabricamos tu mueble a la medida</h1>
+        <p><em>En Madera Makers fabricamos, diseñamos y personalizamos cualquier tipo de mobiliario que tengas en mente.</em></p>
         <p>
-          <a href="https://facebook.com/maderamakers" class="btn btn-lg btn-info text-uppercase">Pide tu cotización!</a>
+          <a href="https://facebook.com/maderamakers" class="btn btn-lg btn-primary">Pide tu cotización ahora</a>
         </p>
+        <p class="text-left">© Copyright Madera Makers 2016</p>
       </div>
     </div>
   </div>
