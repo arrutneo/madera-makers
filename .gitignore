@@ -24,3 +24,4 @@ wp-content/plugins/hello.php
 
 madera-makers-aws-instace.pem
 aws.json
+.DS_Store

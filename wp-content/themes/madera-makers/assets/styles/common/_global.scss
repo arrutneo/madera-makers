@@ -9,12 +9,21 @@ strong {
 em {
   font-family: $font-family-sans-serif-italic;
 }
+
+.main {
+  & > .container {
+    padding: 67px 0;
+  }
+}
+
 .jumbotron {
   background-color: transparent;
   background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  margin-bottom: 0;
+  padding-bottom: 28px;
 
   h1 {
     margin: 50px auto 5px;
@@ -29,7 +38,17 @@ em {
       margin-bottom: 60px;
     }
   }
-  p.text-left {
+  p {
+    &:after {
+      background-color: white;
+    }
+  }
+  h6 {
+    color: white;
+  }
+  p.text-left,
+  p.text-right {
+    font-size: $font-size-base;
     margin-top: 120px;
     margin-bottom: 0;
   }
@@ -44,6 +63,24 @@ em {
   }
 }
 
+.vertical-separator {
+  &:after {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    height: 85px;
+    width: 2px;
+    background-color: $brand-primary;
+  }
+}
+
+.font-size-medium {
+  font-size: $font-size-medium;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -51,6 +88,5 @@ em {
 @media (min-width: $screen-sm-min) {
   .jumbotron {
     padding-top: 121px;
-    // height: 100vh;
   }
 }
