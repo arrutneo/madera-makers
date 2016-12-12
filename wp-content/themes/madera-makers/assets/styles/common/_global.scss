@@ -10,6 +10,12 @@ em {
   font-family: $font-family-sans-serif-italic;
 }
 
+h2 {
+  & + .vertical-separator {
+    margin-bottom: 70px;
+  }
+}
+
 .main {
   & > .container {
     padding: 67px 0;
@@ -79,6 +85,52 @@ em {
 
 .font-size-medium {
   font-size: $font-size-medium;
+}
+
+.box-shadow {
+  box-shadow: 0 10px 15px rgba(0,0,0,.07);
+}
+
+.common-box {
+  padding: 40px 24px 30px;
+  height: 100%;
+}
+
+.hide-text {
+  text-indent: 1000%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.semantic-image {
+  background: transparent url(../images/sprite-maderamakers.svg) no-repeat center 0;
+  background-size: 480px 480px;
+  margin-bottom: 0;
+  position: relative;
+  // top: 50%;
+  // transform: translateY(-50%);
+  display: block;
+
+  &.imagotype {
+    background-position: 0 0;
+    height: 41px;
+    width: 80px;
+  }
+
+  &.logotype {
+    background-position: -96px 0;
+    height: 85px;
+    width: 100px;
+  }
+}
+
+.row-sm-same-height {
+  display: flex;
+
+  [class*="col"]  {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Extra small devices (phones, less than 768px) */

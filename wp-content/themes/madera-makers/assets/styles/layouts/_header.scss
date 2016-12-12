@@ -13,14 +13,14 @@
 .navbar-brand {
   overflow: hidden;
   padding: 0;
-  width: 100px;
-  height: 85px;
+  // width: 100px;
+  // height: 85px;
   &:before {
-    content: "";
-    width: 100px;
-    height: 85px;
-    background: url(../images/maderamakers-logo-white.svg) no-repeat 100%;
-    display: block;
+    // content: "";
+    // width: 100px;
+    // height: 85px;
+    // background: url(../images/maderamakers-logo-white.svg) no-repeat 100%;
+    // display: block;
   }
 }
 

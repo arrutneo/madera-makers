@@ -20,25 +20,35 @@
       <h2 class="text-uppercase">¿Cómo funciona?</h2>
       <p class="vertical-separator">Déjanos poner en tus manos el mueble que solo existe en tu cabeza.</p>
     </div>
-    <div class="col-sm-3 text-center">
-      <img src="<?php bloginfo('template_url'); ?>/dist/images/librero.svg" width="75" height="84" alt="Librero Madera Makers" >
-      <h6 class="text-uppercase">1. Tu idea</h6>
-      <p>Compártenos una foto o la idea del mueble que quieres.</p>
+  </div>
+  <div class="row row-sm-same-height">
+    <div class="col-sm-3">
+      <div class="box-shadow text-center common-box">
+        <img src="<?php bloginfo('template_url'); ?>/dist/images/librero.svg" width="75" height="84" alt="Librero Madera Makers" >
+        <h6 class="text-uppercase">1. Tu idea</h6>
+        <p>Compártenos una foto o la idea del mueble que quieres.</p>
+      </div>
     </div>
-    <div class="col-sm-3 text-center">
-      <img src="<?php bloginfo('template_url'); ?>/dist/images/escritorio.svg" width="84" height="80" alt="Escritorio Madera Makers" >
-      <h6 class="text-uppercase">2. Cotización</h6>
-      <p>Obtén tu cotización personalizada en menos de 48 horas.</p>
+    <div class="col-sm-3">
+      <div class="box-shadow text-center common-box">
+        <img src="<?php bloginfo('template_url'); ?>/dist/images/escritorio.svg" width="84" height="80" alt="Escritorio Madera Makers" >
+        <h6 class="text-uppercase">2. Cotización</h6>
+        <p>Obtén tu cotización personalizada en menos de 48 horas.</p>
+      </div>
     </div>
-    <div class="col-sm-3 text-center">
-      <img src="<?php bloginfo('template_url'); ?>/dist/images/mesa.svg" width="103" height="62" alt="Mesa Madera Makers" >
-      <h6 class="text-uppercase">3. Respuesta</h6>
-      <p>Pide tu mueble y prepárate para tenerlo.</p>
+    <div class="col-sm-3">
+      <div class="box-shadow text-center common-box">
+        <img src="<?php bloginfo('template_url'); ?>/dist/images/mesa.svg" width="103" height="62" alt="Mesa Madera Makers" >
+        <h6 class="text-uppercase">3. Respuesta</h6>
+        <p>Pide tu mueble y prepárate para tenerlo.</p>
+      </div>
     </div>
-    <div class="col-sm-3 text-center">
-      <img src="<?php bloginfo('template_url'); ?>/dist/images/sofa.svg" width="79" height="73" alt="Sofa Madera Makers" >
-      <h6 class="text-uppercase">4. Disfruta</h6>
-      <p>Recibe tu mueble y disfrútalo.</p>
+    <div class="col-sm-3">
+      <div class="box-shadow text-center common-box">
+        <img src="<?php bloginfo('template_url'); ?>/dist/images/sofa.svg" width="79" height="73" alt="Sofa Madera Makers" >
+        <h6 class="text-uppercase">4. Disfruta</h6>
+        <p>Recibe tu mueble y disfrútalo.</p>
+      </div>
     </div>
   </div>
 </div>
