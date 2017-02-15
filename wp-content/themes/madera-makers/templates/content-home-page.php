@@ -63,7 +63,13 @@
     </div>
     <div class="col-sm-6 col-sm-push-1">
       <div class="panel panel-default">
-        <?php echo do_shortcode('[contact-form-7 id="12" title="Envíanos tu idea"]'); ?>
+        <?php
+        if(isset($_SERVER['WP_DB_PASSWORD'])){
+          echo do_shortcode('[contact-form-7 id="12" title="Envíanos tu idea"]');
+        } else {
+          echo do_shortcode('[contact-form-7 id="11" title="Envíanos tu idea"]');
+        }
+        ?>
       </div>
     </div>
   </div>
