@@ -10,7 +10,6 @@ var gulpif       = require('gulp-if');
 var imagemin     = require('gulp-imagemin');
 var jshint       = require('gulp-jshint');
 var lazypipe     = require('lazypipe');
-var less         = require('gulp-less');
 var merge        = require('merge-stream');
 var cssNano      = require('gulp-cssnano');
 var plumber      = require('gulp-plumber');
@@ -88,9 +87,6 @@ var cssTasks = function(filename) {
       return gulpif(enabled.maps, sourcemaps.init());
     })
     .pipe(function() {
-      return gulpif('*.less', less());
-    })
-    .pipe(function() {
       return gulpif('*.scss', sass({
         outputStyle: 'nested', // libsass doesn't support expanded yet
         precision: 10,
@@ -98,7 +94,6 @@ var cssTasks = function(filename) {
         errLogToConsole: !enabled.failStyleTask
       }));
     })
-    .pipe(concat, filename)
     .pipe(autoprefixer, {
       browsers: [
         'last 2 versions',
@@ -106,6 +101,7 @@ var cssTasks = function(filename) {
         'opera 12'
       ]
     })
+    .pipe(concat, filename)
     .pipe(cssNano, {
       safe: true
     })
@@ -164,10 +160,10 @@ var writeToManifest = function(directory) {
 
 
 gulp.task('s3', function () {
-  var options = {uploadPath: "/wp-content/themes/madera-makers/dist/"};
-  var aws = JSON.parse(fs.readFileSync('./aws.json'));
-  return gulp.src('./dist/**')
-      .pipe(s3(aws, options));
+  // var options = {uploadPath: "/wp-content/themes/madera-makers/dist/"};
+  // var aws = JSON.parse(fs.readFileSync('./aws.json'));
+  // return gulp.src('./dist/**')
+  //     .pipe(s3(aws, options));
 });
 
 // ## Gulp tasks

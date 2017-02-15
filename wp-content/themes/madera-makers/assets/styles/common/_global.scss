@@ -69,6 +69,11 @@ h2 {
   }
 }
 
+.panel-default {
+  padding: 45px 60px;
+  border-color: $gray-lighter;
+}
+
 .vertical-separator {
   &:after {
     content: "";
@@ -131,6 +136,25 @@ h2 {
     display: flex;
     flex-direction: column;
   }
+}
+
+.wpcf7-form {
+  label {
+    width: 100%
+  }
+}
+
+.wpcf7-text,
+.wpcf7-textarea {
+  width: 100%;
+  border: 1px solid $gray-lighter;
+  border-radius: 3px;
+}
+
+.wpcf7-submit {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-block;
 }
 
 /* Extra small devices (phones, less than 768px) */
