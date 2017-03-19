@@ -20,6 +20,8 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var s3           = require("gulp-s3");
 var fs           = require("fs");
+var args         = require('yargs').argv;
+var env          = args.target ;
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -268,13 +270,23 @@ gulp.task('watch', function() {
 // ### Build
 // `gulp build` - Run all the build tasks but don't clean up beforehand.
 // Generally you should be running `gulp` instead of `gulp build`.
-gulp.task('build', function(callback) {
-  runSequence('styles',
-              'scripts',
-              ['fonts', 'images'],
-              's3',
-              callback);
-});
+
+if (env === 'production' || env === 'development') {
+  gulp.task('build', function(callback) {
+    runSequence('styles',
+                'scripts',
+                ['fonts', 'images'],
+                's3',
+                callback);
+  });
+} else {
+  gulp.task('build', function(callback) {
+    runSequence('styles',
+                'scripts',
+                ['fonts', 'images'],
+                callback);
+  });
+}
 
 // ### Wiredep
 // `gulp wiredep` - Automatically inject Less and Sass Bower dependencies. See

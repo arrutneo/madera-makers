@@ -18,17 +18,25 @@ h2 {
 
 .main {
   & > .container {
-    padding: 67px 0;
+    padding-top: 67px;
+    padding-bottom: 67px;
   }
 }
 
 .navbar-default {
+  .container {
+    & > .navbar-header {
+      margin: 0;
+    }
+  }
   .navbar-nav {
     padding-top: 25px;
 
     & > li {
       &:last-child {
-        margin-right: 0;
+        & > a {
+          margin-right: 0;
+        }
       }
       & > a {
         font-size: 18px;
@@ -58,6 +66,7 @@ h2 {
   color: white;
   margin-bottom: 0;
   padding-bottom: 28px;
+  padding-top: 130px;
 
   h1 {
     margin: 50px auto 5px;
@@ -98,7 +107,7 @@ h2 {
 }
 
 .panel-default {
-  padding: 45px 60px;
+  padding: 30px;
   border-color: $gray-lighter;
 }
 
@@ -114,6 +123,14 @@ h2 {
     width: 2px;
     background-color: $brand-primary;
   }
+  &.vertical-separator-over {
+    &:after {
+      position: relative;
+      z-index: 1;
+      margin-top: -42.5px;
+    }
+  }
+
 }
 
 .font-size-medium {
@@ -126,7 +143,7 @@ h2 {
 
 .common-box {
   padding: 40px 24px 30px;
-  height: 100%;
+  height: 300px;
 }
 
 .hide-text {
@@ -166,6 +183,10 @@ h2 {
   }
 }
 
+.margin-bottom-medium {
+  margin-bottom: 30px;
+}
+
 .wpcf7-form {
   label {
     width: 100%
@@ -190,7 +211,7 @@ h2 {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
-  .jumbotron {
-    padding-top: 121px;
+  .panel-default {
+    padding: 45px 60px;
   }
 }

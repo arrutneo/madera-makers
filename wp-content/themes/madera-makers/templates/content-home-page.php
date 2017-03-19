@@ -8,7 +8,7 @@
           <a href="#formulario-pedido" class="btn btn-lg btn-primary">Pide tu cotización ahora</a>
         </p>
         <h6 class="text-uppercase">Conoce más</h6>
-        <p class="text-left pull-left">© Copyright Madera Makers 2016</p>
+        <p class="text-left pull-left">© Copyright Madera Makers 2017</p>
         <p class="text-right pull-right"><a class="text-capitalize" href="#">Política de privacidad</a></p>
       </div>
     </div>
@@ -21,7 +21,7 @@
       <p class="vertical-separator">Déjanos poner en tus manos el mueble que solo existe en tu cabeza.</p>
     </div>
   </div>
-  <div class="row row-sm-same-height">
+  <div class="row">
     <div class="col-sm-3">
       <div class="box-shadow text-center common-box">
         <img src="<?php bloginfo('template_url'); ?>/dist/images/librero.svg" width="75" height="84" alt="Librero Madera Makers" >
@@ -60,9 +60,12 @@
       <p>Lo hacemos a partir de tu idea o de una propuesta que armemos para ti según tus necesidades.</p>
       <p>Para comenzar a trabajar por favor llena el formulario de la derecha, adjunta cualquier boceto, dibujo, foto o plano que tengas. Si no tienes ninguna imagen, solo describe lo que necesitas y nosotros nos pondremos en contacto contigo para trabajar una propuesta.</p>
       <p>¡Materializa tus ideas <strong>ahora</strong>!</p>
+      <p style="direction: rtl" class="vertical-separator vertical-separator-over">
+        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/detalle-formulario.jpg" alt="">
+      </p>
     </div>
     <div class="col-sm-6 col-sm-push-1">
-      <div class="panel panel-default">
+      <div class="panel panel-default box-shadow">
         <?php
         if(isset($_SERVER['WP_DB_PASSWORD'])){
           echo do_shortcode('[contact-form-7 id="12" title="Envíanos tu idea"]');
@@ -71,6 +74,53 @@
         }
         ?>
       </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row margin-bottom-medium">
+    <div class="col-xs-12 text-center">
+      <h2 class="text-uppercase vertical-separator">Conoce algunos de nuestros proyectos</h2>
+    </div>
+    <div class="col-sm-4">
+      <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-square-1to1-01.jpg" alt="" width="398" height="398">
+    </div>
+    <div class="col-sm-8">
+      <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-rectangle-16to9-01.jpg" width="826" height="398">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="row margin-bottom-medium">
+        <div class="col-sm-12">
+          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-rectangle-4to3-01.jpg" alt="" width="826" height="592">
+        </div>
+      </div>
+      <div class="row margin-bottom-medium">
+        <div class="col-sm-12">
+          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-rectangle-16to9-02.jpg" alt="" width="826" height="398">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="row margin-bottom-medium">
+        <div class="col-sm-12">
+          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-square-1to1-02.jpg" alt="" width="398" height="398">
+        </div>
+      </div>
+      <div class="row margin-bottom-medium">
+        <div class="col-sm-12">
+          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-rectangle-16to9-03.jpg" alt="" width="398" height="592">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-rectangle-4to3-02.jpg" alt="" width="612" height="398">
+    </div>
+    <div class="col-sm-6">
+      <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-rectangle-4to3-03.jpg" alt="" width="612" height="398">
     </div>
   </div>
 </div>
