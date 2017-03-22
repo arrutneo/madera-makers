@@ -172,6 +172,12 @@ h2 {
     height: 85px;
     width: 100px;
   }
+
+  &.logotype-gray {
+    background-position: -290px -96px;
+    height: 151px;
+    width: 178px;
+  }
 }
 
 .row-sm-same-height {
@@ -183,8 +189,44 @@ h2 {
   }
 }
 
+.list-icons {
+  display: inline-block;
+
+  & > li {
+    display: inline-block;
+
+    &:last-child {
+      & > a {
+        margin-right: 0;
+      }
+    }
+    & > a {
+      display: block;
+      font-size: 18px;
+      line-height: 33px;
+      width: 35px;
+      text-align: center;
+      padding: 0;
+      color: $gray;
+      border: 1px solid $gray;
+      border-radius: 50%;
+      margin-right: 20px;
+
+      &:focus,
+      &:hover {
+        border-color: $gray-lighter;
+        color: $gray-lighter;
+      }
+    }
+  }
+}
+
 .margin-bottom-medium {
   margin-bottom: 30px;
+}
+
+.font-size-medium {
+  font-size: $font-size-medium;
 }
 
 .wpcf7-form {
@@ -204,6 +246,27 @@ h2 {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-block;
+}
+
+.politica-de-privacidad {
+  .navbar-default .navbar-nav > li > a {
+    color: $gray;
+    border-color: $gray;
+  }
+  .semantic-image {
+    &.logotype {
+      background-position: 0 -192px;
+    }
+  }
+  .content-info {
+    padding-top: 0;
+  }
+}
+
+.page-header {
+  margin-top: 180px;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 /* Extra small devices (phones, less than 768px) */

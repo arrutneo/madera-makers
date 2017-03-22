@@ -18,7 +18,7 @@
   <div class="row">
     <div class="col-xs-12 text-center">
       <h2 class="text-uppercase">¿Cómo funciona?</h2>
-      <p class="vertical-separator">Déjanos poner en tus manos el mueble que solo existe en tu cabeza.</p>
+      <p class="vertical-separator font-size-medium">Ponemos en tus manos el mueble que tienes en tu cabeza.</p>
     </div>
   </div>
   <div class="row">
