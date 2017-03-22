@@ -9,7 +9,7 @@
         </p>
         <h6 class="text-uppercase">Conoce más</h6>
         <p class="text-left pull-left">© Copyright Madera Makers 2017</p>
-        <p class="text-right pull-right"><a class="text-capitalize" href="#">Política de privacidad</a></p>
+        <p class="text-right pull-right"><a class="text-capitalize" href="/politica-de-privacidad">Política de privacidad</a></p>
       </div>
     </div>
   </div>

@@ -13,7 +13,7 @@
       </div>
       <div class="row">
         <p class="text-left col-sm-6">© Copyright Madera Makers 2017</p>
-        <p class="text-right col-sm-6"><a class="text-capitalize" href="#">Política de privacidad</a></p>
+        <p class="text-right col-sm-6"><a class="text-capitalize" href="/politica-de-privacidad">Política de privacidad</a></p>
       </div>
     </div>
     <?php dynamic_sidebar('sidebar-footer'); ?>
