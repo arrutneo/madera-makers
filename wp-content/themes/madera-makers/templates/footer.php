@@ -8,6 +8,7 @@
         <ul class="list-unstyled list-icons clearfix">
           <li><a title="Facebook Madera Makers" href="https://www.facebook.com/maderamakers"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
           <li><a title="Correo Madera Makers" href="mailto:hola@maderamakers.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+          <li><a title="Instagram Madera Makers" href="https://www.instagram.com/maderamakers/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
           <li><a title="Pinterest Madera Makers" href="https://www.pinterest.com/maderamakers"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
         </ul>
       </div>

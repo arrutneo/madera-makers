@@ -54,17 +54,10 @@
 </div>
 <div id="formulario-pedido" class="container">
   <div class="row">
-    <div class="col-sm-5">
-      <h2 class="text-uppercase">Fabricamos tu mueble a la medida</h2>
-      <p>En Madera Makers fabricamos muebles y proyectos de interiorismo a la medida, con los mejores materiales y la más alta calidad.</p>
-      <p>Lo hacemos a partir de tu idea o de una propuesta que armemos para ti según tus necesidades.</p>
-      <p>Para comenzar a trabajar por favor llena el formulario de la derecha, adjunta cualquier boceto, dibujo, foto o plano que tengas. Si no tienes ninguna imagen, solo describe lo que necesitas y nosotros nos pondremos en contacto contigo para trabajar una propuesta.</p>
-      <p>¡Materializa tus ideas <strong>ahora</strong>!</p>
-      <p style="direction: rtl" class="vertical-separator vertical-separator-over">
-        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/detalle-formulario.jpg" alt="">
-      </p>
+    <div class="col-xs-12 text-center">
+      <h2 class="text-uppercase vertical-separator">Fabricamos tu mueble a la medida</h2>
     </div>
-    <div class="col-sm-6 col-sm-push-1">
+    <div class="col-sm-6">
       <div class="panel panel-default box-shadow">
         <?php
         if(isset($_SERVER['WP_DB_PASSWORD'])){
@@ -74,6 +67,15 @@
         }
         ?>
       </div>
+    </div>
+    <div class="col-sm-5 col-sm-push-1">
+      <p>En Madera Makers fabricamos muebles y proyectos de interiorismo a la medida, con los mejores materiales y la más alta calidad.</p>
+      <p>Lo hacemos a partir de tu idea o de una propuesta que armemos para ti según tus necesidades.</p>
+      <p>Para comenzar a trabajar por favor llena el formulario de la derecha, adjunta cualquier boceto, dibujo, foto o plano que tengas. Si no tienes ninguna imagen, solo describe lo que necesitas y nosotros nos pondremos en contacto contigo para trabajar una propuesta.</p>
+      <p>¡Materializa tus ideas <strong>ahora</strong>!</p>
+      <p class="vertical-separator vertical-separator-over">
+        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/detalle-formulario.jpg" alt="">
+      </p>
     </div>
   </div>
 </div>

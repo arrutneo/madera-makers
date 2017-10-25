@@ -11,9 +11,12 @@ em {
 }
 
 h2 {
+  &.vertical-separator,
   & + .vertical-separator {
     margin-bottom: 70px;
   }
+
+
 }
 
 .main {
@@ -223,6 +226,10 @@ h2 {
 
 .margin-bottom-medium {
   margin-bottom: 30px;
+}
+
+.margin-bottom-large {
+  margin-bottom: 50px;
 }
 
 .font-size-medium {
