@@ -52,7 +52,8 @@
     </div>
   </div>
 </div>
-<div id="formulario-pedido" class="container">
+<div class="container-fluid overflow-hidden">
+  <div id="formulario-pedido" class="container">
   <div class="row">
     <div class="col-xs-12 text-center">
       <h2 class="text-uppercase vertical-separator">Fabricamos tu mueble a la medida</h2>
@@ -78,6 +79,7 @@
       </p>
     </div>
   </div>
+</div>
 </div>
 <div class="container-fluid">
   <div class="row margin-bottom-medium">
