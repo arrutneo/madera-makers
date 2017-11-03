@@ -64,7 +64,7 @@
         if(isset($_SERVER['WP_DB_PASSWORD'])){
           echo do_shortcode('[contact-form-7 id="6" title="Envíanos tu idea"]');
         } else {
-          echo do_shortcode('[contact-form-7 id="11" title="Envíanos tu idea"]');
+          echo do_shortcode('[contact-form-7 id="7" title="Envíanos tu idea"]');
         }
         ?>
       </div>
