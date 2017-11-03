@@ -81,7 +81,7 @@
   </div>
 </div>
 </div>
-<div class="container-fluid">
+<div class="container">
   <div class="row margin-bottom-medium">
     <div class="col-xs-12 text-center">
       <h2 class="text-uppercase vertical-separator">Conoce algunos de nuestros proyectos</h2>
