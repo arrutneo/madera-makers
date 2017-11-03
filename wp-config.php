@@ -31,6 +31,10 @@
 
    /** MySQL hostname */
    define('DB_HOST', $_SERVER['WP_DB_HOST']);
+
+   define( 'DBI_AWS_ACCESS_KEY_ID', $_SERVER['DBI_AWS_ACCESS_KEY_ID'] );
+   
+   define( 'DBI_AWS_SECRET_ACCESS_KEY', $_SERVER['DBI_AWS_SECRET_ACCESS_KEY'] );
  }
  else{
    /** The name of the database for WordPress */
