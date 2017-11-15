@@ -61,8 +61,8 @@
     <div class="col-sm-6">
       <div class="panel panel-default box-shadow">
         <?php
-        if(isset($_SERVER['WP_DB_PASSWORD'])){
-          echo do_shortcode('[contact-form-7 id="7" title="Envíanos tu idea"]');
+        if(function_exists('is_wpe')){
+          echo do_shortcode('[contact-form-7 id="9" title="Solicitud de presupuesto"]');
         } else {
           echo do_shortcode('[contact-form-7 id="11" title="Envíanos tu idea"]');
         }
